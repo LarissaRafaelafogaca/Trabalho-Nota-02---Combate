@@ -6,7 +6,7 @@ public class Combate {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Entrada dos dados do primeiro campeão
+        
         System.out.println("Digite os dados do primeiro campeão:");
         System.out.print("Nome: ");
         String nome1 = scanner.nextLine();
@@ -20,7 +20,7 @@ public class Combate {
 
         Campeao campeao1 = new Campeao(nome1, vida1, ataque1, armadura1);
 
-        // Entrada dos dados do segundo campeão
+      
         System.out.println("Digite os dados do segundo campeão:");
         System.out.print("Nome: ");
         String nome2 = scanner.nextLine();
@@ -33,7 +33,7 @@ public class Combate {
 
         Campeao campeao2 = new Campeao(nome2, vida2, ataque2, armadura2);
 
-        // Definir o número de turnos
+       
         System.out.print("Quantos turnos você deseja executar? ");
         int turnos = scanner.nextInt();
 
@@ -44,7 +44,7 @@ public class Combate {
 
             System.out.println("\nResultado do turno " + i + ":");
 
-            // Ataque simultâneo dos campeões
+            
             campeao1.takeDamage(campeao2.getAtaque());
             campeao2.takeDamage(campeao1.getAtaque());
 
