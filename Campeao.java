@@ -16,8 +16,8 @@ class Campeao {
     }
 
     public void takeDamage(int dano) {
-        int danoRecebido = Math.max(1, dano - this.armadura); // Garante que pelo menos 1 de dano é tomado
-        this.vida = Math.max(0, this.vida - danoRecebido); // Garante que a vida não fique negativa
+        int danoRecebido = Math.max(1, dano - this.armadura);
+        this.vida = Math.max(0, this.vida - danoRecebido); 
     }
 
     public String status() {
